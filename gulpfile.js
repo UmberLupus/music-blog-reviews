@@ -44,10 +44,12 @@ gulp.task("watch", function() {
     gulp.watch(
         [
             "./*.html",
+            "./reviews/*.html",
             "./*.yml",
             "./_includes/*.html",
             "./_layouts/*.html",
-            "./_posts/**/*.*"
+            "./_posts/**/*.*",
+
         ]
     ).on('change', gulp.series('jekyll-dev', 'sass') );
 

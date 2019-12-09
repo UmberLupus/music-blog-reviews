@@ -1,0 +1,39 @@
+.site-review {
+    margin: 1.5em 4em;
+    min-height: 80vh;
+
+    h2 {
+        text-align: center;
+        margin: 1em 0;
+    }
+
+    article.review-content {
+        display: flex;
+
+        .text-content {
+            padding: 0 2em;
+
+            blockquote {
+                color: #929292;
+                font-style: italic;
+                font-size: 1em;
+                margin: 3.5em 0 0;
+                padding: 0 0 1.2em;
+                text-align: center;
+                clear: both;
+            }
+        }
+
+        .site-review-image {
+            img {
+                display: block;
+                border-radius: 10px;
+                height: auto;
+                width: 30em;
+            }
+        }
+
+    }
+
+
+}

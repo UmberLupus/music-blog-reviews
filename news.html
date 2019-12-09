@@ -1,0 +1,15 @@
+---
+layout: main
+title: Reviews
+permalink: /news/
+---
+{% for category in site.categories %}
+    {%if category[0] == "news"  %}
+        {% for post in category[1] %}
+            <a href="{{ site.baseurl }} {{ post.url }}">
+                <p>{{ post.title }}</p>
+                <p>{{ post.excerpt }}</p>
+            </a>
+        {% endfor %}
+    {% endif %}
+{% endfor %}

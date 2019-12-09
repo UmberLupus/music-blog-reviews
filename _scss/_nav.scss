@@ -1,0 +1,39 @@
+.site-nav {
+    display: flex;
+    background-color: cadetblue;
+    justify-content: space-between;
+    padding: 1.5em 2em;
+
+    & a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .site-menu {
+        ul {
+            list-style: none;
+            li {
+                display: inline-block;
+                font-size: 1.1em;
+                margin-top: 0.2em;
+                margin:0 1em;
+                color: #fff;
+                & i {
+                    // color: #
+                }
+
+                &:hover {
+                    border-bottom: 2px solid chocolate;
+                }
+            }
+        }
+    }
+
+}
+
+// .site-reviews {
+//     background-color: coral;
+//     margin: 0 5em;
+// }
+
+
