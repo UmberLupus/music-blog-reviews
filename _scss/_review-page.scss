@@ -1,5 +1,7 @@
 .site-review {
-    margin: 1.5em 4em;
+    width: $container-width;
+    margin: 0 auto;
+
     min-height: 80vh;
 
     h2 {
@@ -34,6 +36,5 @@
         }
 
     }
-
 
 }
