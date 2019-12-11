@@ -1,40 +1,33 @@
-.site-review {
-    width: $container-width;
-    margin: 0 auto;
+h2 {
+    text-align: center;
+    margin: 1em 0;
+}
 
-    min-height: 80vh;
+article.review-content {
+    display: flex;
 
-    h2 {
-        text-align: center;
-        margin: 1em 0;
+    .text-content {
+        padding: 0 2em;
+
+        blockquote {
+            color: #929292;
+            font-style: italic;
+            font-size: 1em;
+            margin: 3.5em 0 0;
+            padding: 0 0 1.2em;
+            text-align: center;
+            clear: both;
+        }
     }
 
-    article.review-content {
-        display: flex;
-
-        .text-content {
-            padding: 0 2em;
-
-            blockquote {
-                color: #929292;
-                font-style: italic;
-                font-size: 1em;
-                margin: 3.5em 0 0;
-                padding: 0 0 1.2em;
-                text-align: center;
-                clear: both;
-            }
+    .container-image {
+        img {
+            display: block;
+            border-radius: 10px;
+            height: auto;
+            width: 30em;
         }
-
-        .site-review-image {
-            img {
-                display: block;
-                border-radius: 10px;
-                height: auto;
-                width: 30em;
-            }
-        }
-
     }
 
 }
+

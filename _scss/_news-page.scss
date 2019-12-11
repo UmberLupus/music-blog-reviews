@@ -1,0 +1,24 @@
+h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+.news-page-container {
+    display: flex;
+    // min-height: 80vh;
+
+    .text-content {
+        padding-right: 2em;
+    }
+
+    .news-page-image {
+    }
+
+    .news-page-image img {
+        display: block;
+        width: 33em;
+        height: auto;
+        border-radius: 10px;
+    }
+}
+

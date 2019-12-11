@@ -1,0 +1,58 @@
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+
+    > div {
+        display: inline-block;
+        outline: 1px solid $homepage-color;
+        padding: 0.5em;
+        font-size: 3rem;
+        text-align: right;
+        position: relative;
+        // margin: 0.1em;
+
+        .dot {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            background-color: $homepage-color;
+            cursor: pointer;
+        }
+
+    }
+
+     div:hover .tooltip {
+        // cursor: pointer;
+        display: block;
+    }
+
+    .tooltip {
+        display: none;
+        white-space: nowrap;
+        border-radius: 10px;
+        font-size: .4em;
+        position: absolute;
+        z-index: 1000;
+        top: -11px;
+        left: 76px;
+        padding: 0.2em;
+        background: #e7e7e7;
+    }
+
+    .tooltip::before {
+        content: '';
+        display: block;
+        width: 0;
+        height: 0;
+        position: absolute;
+        border-top: 8px solid #e7e7e7;
+        border-bottom: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-left: 8px solid transparent;
+        left: 53px;
+        top: 36px;
+    }
+
+}
+

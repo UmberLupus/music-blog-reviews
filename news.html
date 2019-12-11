@@ -3,12 +3,11 @@ layout: main
 title: Reviews
 permalink: /news/
 ---
-<div class="site-news-container">
-{% for category in site.categories %}
+<div class="container">
+    {% for category in site.categories %}
         {%if category[0] == "news"  %}
             {% for post in category[1] %}
                 <div class="news-wapper">
-
                     <div class="heading-content">
                         <span class="date">
                             <span class="month"> {{ post.date | date: '%b'  }} </span>
@@ -18,7 +17,7 @@ permalink: /news/
                     </div>
                     <div class="news-content">
                         <div class="news-image-wrapper">
-                            <img src="{{post.imageurl}}" alt="news-img">
+                            <a href="{{ site.baseurl }}{{ post.url }}"> <img src="{{ post.imageurl }}" alt="news-img"> </a>
                         </div>
                         <p>{{ post.excerptText }} <span>more...</span>  </p>
                         <div class="clear"></div>
