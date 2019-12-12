@@ -1,9 +1,14 @@
 .site-reviews {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    // grid-template-rows: 1fr 1fr 1fr;
     justify-items: center;
     margin-top: 2em;
+
+    @include bp(laptop) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
 }
 
 .review-image-container {
@@ -12,9 +17,10 @@
     padding: 1em 1em;
     background-color: #FFF;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    margin: 1em 0;
+    margin: 2em 0;
     border-radius: 10px;
     position: relative;
+    transition: transform .5s;
 
     img {
         display: block;
@@ -56,10 +62,12 @@
 
     &:hover {
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        transform: scale(1.1);
     }
 
     img:hover {
         box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+
     }
 
     &:hover .review-score {
@@ -67,7 +75,7 @@
     }
 
     &:hover p {
-        border-bottom: 2px solid $homepage-color;
+        border-bottom: 4px solid $homepage-color;
     }
 }
 

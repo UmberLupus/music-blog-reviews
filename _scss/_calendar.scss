@@ -19,7 +19,6 @@
             background-color: $homepage-color;
             cursor: pointer;
         }
-
     }
 
      div:hover .tooltip {
@@ -28,6 +27,7 @@
     }
 
     .tooltip {
+        animation: fadein 1.5s;
         display: none;
         white-space: nowrap;
         border-radius: 10px;
@@ -56,3 +56,11 @@
 
 }
 
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}

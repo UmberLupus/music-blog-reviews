@@ -1,7 +1,8 @@
 $breakpoints: (
     'phone': (max-width: 500px),
     'tablet': (max-width: 900px),
-    'desktop': (max-width: 1200px)
+    'laptop': (max-width: 1500px),
+    'desktop': (max-width: 1600px)
 ) !default;
 
 @mixin bp($breakpoint) {
@@ -12,6 +13,6 @@ $breakpoints: (
     }
     @else {
       @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
-          + "Available breakpoints are: #{map-keys($breakpoints)}.";
+        + "Available breakpoints are: #{map-keys($breakpoints)}.";
     }
 }
