@@ -5,13 +5,22 @@ h2 {
 
 .news-page-container {
     display: flex;
-    // min-height: 80vh;
+    @include bp (mobile) {
+        flex-direction: column;
+    }
 
     .text-content {
         padding-right: 2em;
+
+        @include bp (mobile) {
+            margin-bottom: 2em;
+        }
     }
 
     .news-page-image {
+        @include bp (mobile) {
+            margin-bottom: 2em;
+        }
     }
 
     .news-page-image img {

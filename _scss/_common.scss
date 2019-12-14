@@ -2,6 +2,10 @@
     width: $container-width;
     margin: 0 auto;
     margin-top: 3em;
+
+    @include bp(mobile) {
+        width: auto;
+    }
 }
 
 .page {

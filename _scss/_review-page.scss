@@ -6,6 +6,10 @@ h2 {
 article.review-content {
     display: flex;
 
+    @include bp(mobile) {
+        flex-direction: column;
+    }
+
     .text-content {
         padding: 0 2em;
 
@@ -13,10 +17,14 @@ article.review-content {
             color: #929292;
             font-style: italic;
             font-size: 1em;
-            margin: 3.5em 0 0;
+            margin: 3em 0 3em 0;
             padding: 0 0 1.2em;
             text-align: center;
             clear: both;
+        }
+
+        @include bp(mobile) {
+            margin-bottom: 2em;
         }
     }
 
@@ -26,6 +34,10 @@ article.review-content {
             border-radius: 10px;
             height: auto;
             width: 30em;
+        }
+
+        @include bp(mobile) {
+            margin: 0 auto 2em auto;
         }
     }
 

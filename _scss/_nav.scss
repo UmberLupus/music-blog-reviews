@@ -18,13 +18,28 @@
                 margin-top: 0.2em;
                 margin:0 1em;
                 color: #fff;
-                & i {
-                    // color: #
-                }
 
                 &:hover {
                     border-bottom: 2px solid chocolate;
                 }
+            }
+        }
+
+        @include bp(mobile) {
+            display: none;
+        }
+    }
+
+    .mobile-menu {
+        display: none;
+
+
+        @include bp(mobile) {
+            display: block;
+            background-color: red;
+            & a:hover .site-menu ul {
+                display: block;
+                background-color: green;
             }
         }
     }
