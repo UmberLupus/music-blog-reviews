@@ -1,28 +1,12 @@
 html {
     font-size: 16px;
     line-height: 1.5;
-    // font-family: 'Noto Sans', sans-serif;
-    font-family: 'Courgette', cursive;
-
+    font-family: 'Noto Sans', sans-serif;
 }
 
 body, input, textarea, button, option, select {
     font: inherit;
 }
-
-// p, ul, ol {
-//     padding-bottom: 1.5em;
-// }
-
-// ul, ol {
-//     padding-left: 2.5em;
-// }
-
-
-// h1, h2, h3, h4, h5, h6, blockquote {
-//     font-family: 'Lora', serif;
-// }
-
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: normal;
@@ -40,4 +24,7 @@ blockquote {
     padding-left: 2.5em;
     padding-right: 2.5em;
     margin-bottom: 1.5em;
+    font-family: 'Courgette', cursive;
+    // background-color: snow;
+
 }

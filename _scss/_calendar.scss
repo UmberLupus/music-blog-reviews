@@ -13,6 +13,9 @@ h1 {
         @include bp(mobile) {
             display: none;
         }
+        background-color: $background-color;
+        font-size: 2em;
+        text-align: center;
     }
 
     > div {
@@ -22,15 +25,17 @@ h1 {
         font-size: 3rem;
         text-align: right;
         position: relative;
+        background-color: #FFF;
         // margin: 0.1em;
 
         .dot {
             display: inline-block;
-            width: 10px;
-            height: 10px;
+            width: 15px;
+            height: 15px;
             border-radius: 100%;
             background-color: $homepage-color;
             cursor: pointer;
+            margin-right: 0.2em;
         }
     }
 
@@ -42,7 +47,7 @@ h1 {
     }
 
     .tooltip {
-        animation: fadein 1.5s;
+        animation: fadein 2s;
         display: none;
         white-space: nowrap;
         border-radius: 10px;
@@ -52,7 +57,7 @@ h1 {
         top: -11px;
         left: 76px;
         padding: 0.2em;
-        background-color: #e7e7e7;
+        background-color: $tooltip-color;
     }
 
     .tooltip::before {
@@ -61,7 +66,7 @@ h1 {
         width: 0;
         height: 0;
         position: absolute;
-        border-top: 8px solid #e7e7e7;
+        border-top: 8px solid $tooltip-color;
         border-bottom: 8px solid transparent;
         border-right: 8px solid transparent;
         border-left: 8px solid transparent;

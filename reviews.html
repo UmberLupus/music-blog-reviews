@@ -10,7 +10,7 @@ permalink: /reviews/
             {% for post in category[1] %}
                 <div class="review-image-container">
                     <span class="review-score">
-                        <span>9</span>
+                        <span>{{post.score}}</span>
                     </span>
                     <a href="{{ site.baseurl }}{{ post.url }}">
                         <img src="{{ post.imageurl }}" alt="a" />

@@ -4,7 +4,7 @@
     justify-items: center;
     margin-top: 2em;
 
-    @include bp(laptop) {
+    @include bp(desktop) {
         grid-template-columns: repeat(3, 1fr);
     }
 
@@ -15,7 +15,6 @@
     @include bp(phone) {
         grid-template-columns: 1fr;
     }
-
 }
 
 .review-image-container {
@@ -32,7 +31,7 @@
     img {
         display: block;
         border-radius: 10px;
-        width: 22em;
+        width: 100%;
         min-height: auto;
     }
 
@@ -45,18 +44,18 @@
         display: none;
         z-index: 5;
         position: absolute;
-        top: 16px;
-        left: 268px;
+        top: 15px;
+        left: 249px;
         width: 0;
         height: 0;
-        border-top: 100px solid $homepage-color;
-        border-left: 100px solid transparent;
+        border-top: 120px solid $homepage-color;
+        border-left: 120px solid transparent;
 
         span {
             z-index: 10;
             position: absolute;
-            top: -96px;
-            left: -39px;
+            top: -115px;
+            left: -53px;
             font-size: 2.5em;
             color: #FFF;
         }

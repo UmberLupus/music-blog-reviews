@@ -1,6 +1,6 @@
 .site-nav {
     display: flex;
-    background-color: cadetblue;
+    background-color: $nav-color;
     justify-content: space-between;
     padding: 1.5em 2em;
 
@@ -9,37 +9,75 @@
         text-decoration: none;
     }
 
+    .site-logo {
+        i {
+            color: $homepage-color;
+        }
+    }
+
     .site-menu {
         ul {
+            position: relative;
             list-style: none;
             li {
                 display: inline-block;
                 font-size: 1.1em;
                 margin-top: 0.2em;
                 margin:0 1em;
-                color: #fff;
+                color: $homepage-color;
 
                 &:hover {
-                    border-bottom: 2px solid chocolate;
+                    border-bottom: 2px solid $homepage-color;
                 }
             }
         }
 
-        @include bp(mobile) {
+        & label, #hamburger {
             display: none;
         }
-    }
-
-    .mobile-menu {
-        display: none;
-
 
         @include bp(mobile) {
-            display: block;
-            background-color: red;
-            & a:hover .site-menu ul {
+            & ul {
+                display: none;
+            }
+
+            & ul::before {
+                content: '';
                 display: block;
-                background-color: green;
+                width: 0;
+                height: 0;
+                position: absolute;
+                border-bottom: 8px solid #e7e7e7;
+                border-top: 8px solid transparent;
+                border-right: 8px solid transparent;
+                border-left: 8px solid transparent;
+                left: 160px;
+                top: -16px;
+            }
+
+            & ul li {
+                display: block;
+                background-color: salmon;
+                padding: 0.5em;
+                color: #000;
+                & a {
+                    color: #000;
+                }
+            }
+
+            & input:checked ~ ul {
+                position: absolute;
+                right: 1px;
+                display: block;
+                z-index: 10;
+            }
+
+            & label {
+                display: inline-block;
+                color: #fff;
+                font-style: normal;
+                font-size: 1.6em;
+                padding: 10px;
             }
         }
     }
