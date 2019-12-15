@@ -59,15 +59,15 @@
                 display: block;
                 background-color: $nav-color;
                 padding: 0.5em;
-                color: #000;
+                color: $homepage-color;
                 & a {
-                    color: #000;
+                    color: #FFF;
                 }
             }
 
             & input:checked ~ ul {
                 position: absolute;
-                right: 1px;
+                right: -14px;
                 display: block;
                 z-index: 10;
             }
